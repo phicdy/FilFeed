@@ -23,7 +23,7 @@ dagger_hilt = "2.51.1"
 sql_delight = "1.5.5"
 sqlite = "2.4.0"
 timber = "5.0.1"
-flipper = "0.260.0"
+flipper = "0.273.0"
 junit = "4.13.2"
 baselineprofile = "1.2.4"
 
