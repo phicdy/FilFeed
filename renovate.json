@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":timezone(Asia/Tokyo)"
   ],
   "labels": [
@@ -9,46 +9,46 @@
   "packageRules": [
     {
       "groupName": "androidx.activity",
-      "matchPackagePatterns": [
-        "^androidx\\.activity:"
+      "matchPackageNames": [
+        "/^androidx\\.activity:/"
       ]
     },
     {
       "groupName": "androidx.lifecycle",
-      "matchPackagePatterns": [
-        "^androidx\\.lifecycle:"
+      "matchPackageNames": [
+        "/^androidx\\.lifecycle:/"
       ]
     },
     {
       "groupName": "androidx.test",
-      "matchPackagePatterns": [
-        "^androidx\\.test:",
-        "^androidx\\.test\\.ext:",
-        "^androidx\\.test\\.espresso:"
-      ],
       "automerge": true,
       "major": {
         "automerge": false
-      }
+      },
+      "matchPackageNames": [
+        "/^androidx\\.test:/",
+        "/^androidx\\.test\\.ext:/",
+        "/^androidx\\.test\\.espresso:/"
+      ]
     },
     {
       "groupName": "github actions",
-      "matchPackagePatterns": [
-        "^peter-evans/create-or-update-comment",
-        "^peter-evans/find-comment"
-      ],
       "automerge": true,
       "major": {
         "automerge": false
-      }
+      },
+      "matchPackageNames": [
+        "/^peter-evans/create-or-update-comment/",
+        "/^peter-evans/find-comment/"
+      ]
     },
     {
       "groupName": "Jetpack Compose compiler and Kotlin",
-      "matchPackagePatterns": [
-        "^androidx\\.compose\\.compiler:",
-        "^androidx\\.compose:",
-        "org\\.jetbrains\\.kotlin:",
-        "^org\\.jetbrains\\.kotlinx:kotlinx-coroutines"
+      "matchPackageNames": [
+        "/^androidx\\.compose\\.compiler:/",
+        "/^androidx\\.compose:/",
+        "/org\\.jetbrains\\.kotlin:/",
+        "/^org\\.jetbrains\\.kotlinx:kotlinx-coroutines/"
       ]
     }
   ]
