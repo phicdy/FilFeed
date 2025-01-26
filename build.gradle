@@ -99,7 +99,7 @@ subprojects {
             implementation 'androidx.compose.runtime:runtime-livedata'
 
             implementation 'androidx.activity:activity-compose:1.9.1'
-            implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.4'
+            implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7'
 
             testImplementation libs.junit
             testImplementation 'org.mockito.kotlin:mockito-kotlin:5.4.0'
