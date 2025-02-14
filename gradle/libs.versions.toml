@@ -44,7 +44,7 @@ lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", versi
 
 compose_bom = { module = "androidx.compose:compose-bom", version = "2024.06.00" }
 accompanist = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanist" }
-firebase-ads = { module = "com.google.firebase:firebase-ads", version = "23.2.0" }
+firebase-ads = { module = "com.google.firebase:firebase-ads", version = "23.6.0" }
 
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 activity = { module = "androidx.activity:activity-ktx", version.ref = "activity_ktx" }
